@@ -511,7 +511,7 @@ def getGLSInfo():
     return glserr
 
 def checkSendcloudWarenpost():
-    if (LAENGE <= 353 and BREITE <= 250 and HOEHE <= 80 and GEWICHT <= 1000):
+    if (LAENGE <= 353 and BREITE <= 250 and HOEHE <= 80 and GEWICHT <= 1000 and ZIEL=="DEU"):
         return { "preis": 3.4, "produkt": "SC Warenpost" }
     return { "preis": 999, "produkt": "SC Warenpost" }
 
