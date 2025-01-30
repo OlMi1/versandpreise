@@ -523,7 +523,7 @@ if (PAKAJOBENUTZEN):
         responsedata["pakajo_routed"] = getPakajoInfo(1822, False)
     responsedata["pakajo_final"] = getPakajoInfo(1823, False)
 responsedata["jumingo_Exp."] = jumingo()
-responsedata["sendcloud"] = checkSendcloudWarenpost()
+if (ZIEL=="DEU"): responsedata["sendcloud"] = checkSendcloudWarenpost()
 responsedata["hermes"] = getHermesInfo()
 responsedata["gls"] = getGLSInfo()
 # responsedata["dpd"] = getDPDInfo() Ist mir zu schwer. Wer eine API kennt, gerne hinzufügen. Ist sonst auch indirekt bei Pakajo, aber ist teurer als direkt...
